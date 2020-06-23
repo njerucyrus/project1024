@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="boxBackgroundColor">@android:color/white</item>
+    </style>
+    <style name="AppButtonOutline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="FacebookButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_ui_fb_cornered</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="GoogleButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_ui_google_cornered</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>

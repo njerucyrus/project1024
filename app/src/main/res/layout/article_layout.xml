@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_default256"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_title"
+            android:text="Title | Category"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:textSize="14sp"
+            android:text="Article content goes here"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:button="@drawable/sl_favourite_24"
+            android:buttonTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/tv_body"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:layout_margin="8dp"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_body"
+            app:layout_constraintStart_toEndOf="@id/checkbox_like"
+            android:backgroundTint="@color/colorWhite"
+            android:tint="@color/colorPrimary"
+            android:id="@+id/btn_comments"
+            android:src="@drawable/ic_baseline_comment_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:button="@drawable/sl_bookmark_24"
+            android:buttonTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_comments"
+            app:layout_constraintTop_toBottomOf="@id/tv_body"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
