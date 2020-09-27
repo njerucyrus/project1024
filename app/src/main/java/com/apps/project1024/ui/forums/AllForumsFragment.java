@@ -53,7 +53,7 @@ public class AllForumsFragment extends Fragment implements RecyclerItemClickList
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mBinding = FragmentAllForumsBinding.inflate(inflater, container, false);
-        mViewModel = new ViewModelProvider(this).get(ForumsViewModel.class);
+
         return mBinding.getRoot();
     }
 
