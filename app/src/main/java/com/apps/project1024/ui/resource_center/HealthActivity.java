@@ -87,6 +87,9 @@ public class HealthActivity extends AppCompatActivity implements RecyclerItemCli
         } else if (item.getResId() == R.drawable.pregnant) {
             startActivity(new Intent(HealthActivity.this, TeenagePregnancyActivity.class));
 
+        } else if (item.getResId() == R.drawable.condoms) {
+            startActivity(new Intent(HealthActivity.this, CondomsActivity.class));
+
         }
     }
 }
