@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:iconTint="@color/colorPrimaryText"
+        android:icon="@drawable/ic_baseline_add_24"
+        app:showAsAction="never"
+        android:id="@+id/action_create_article"
+        android:title="Create Article"/>
+
+    <item
+        android:iconTint="@color/colorPrimaryText"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="never"
+        android:id="@+id/action_manage_articles"
+        android:title="Manage Articles"/>
+
+    <item
+        android:iconTint="@color/colorPrimaryText"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="never"
+        android:id="@+id/action_post_job"
+        android:title="Post Job"/>
+
+    <item
+        android:iconTint="@color/colorPrimaryText"
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        app:showAsAction="never" />
+</menu>

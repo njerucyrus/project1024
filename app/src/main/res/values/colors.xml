@@ -12,4 +12,7 @@
     <color name="colorFbButtonBlue">#3b5998</color>
     <color name="colorGoogleButtonRed">#dc4d3b</color>
     <color name="colorGreen">#b9027e02</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDark">#3C3F41</color>
+    <color name="fbGreen">#42B72A</color>
 </resources>

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     app:cardElevation="8dp"
-    android:layout_margin="8dp"
-    android:layout_height="200dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_height="180dp"
     app:cardCornerRadius="8dp">
 
 
@@ -17,11 +21,11 @@
         <ImageView
             android:id="@+id/imageView"
             android:scaleType="centerCrop"
-            android:src="@drawable/user_default256"
+            android:src="@drawable/no_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="140dp"
+            android:layout_width="120dp"
             android:layout_height="match_parent"/>
 
         <TextView
@@ -31,20 +35,31 @@
             android:layout_marginTop="8dp"
             android:id="@+id/tv_title"
             android:text="Title | Category"
+
             android:textColor="@color/colorPrimaryText"
             android:textSize="18sp"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:layout_margin="8dp"
-            android:textSize="14sp"
-            android:text="Article content goes here"
-            app:layout_constraintStart_toEndOf="@id/imageView"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
             android:id="@+id/tv_body"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            app:layout_constrainedWidth="true"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:paddingStart="4dp"
+            android:paddingEnd="8dp"
+            android:text="Article content goes here"
+
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintVertical_bias="0.128" />
 
         <CheckBox
             android:id="@+id/checkbox_like"
@@ -71,6 +86,7 @@
             android:tint="@color/colorPrimary"
             android:id="@+id/btn_comments"
             android:src="@drawable/ic_baseline_comment_24"
+            android:foregroundGravity="center_horizontal|center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -92,4 +108,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>

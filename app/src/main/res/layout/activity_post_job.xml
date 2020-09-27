@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.apps.project1024.ui.jobs.PostJobActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="8dp"
+        android:hint="Job Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_job_category"
+        android:entries="@array/job_category"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_job_industry"
+        android:entries="@array/job_industry"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="8dp"
+        android:hint="Job Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_job_description"
+            android:minLines="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_margin="8dp"
+        android:checked="true"
+        android:id="@+id/checkbox_internship"
+        android:text="This is an Internship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="8dp"
+        android:hint="Company Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:entries="@array/location"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:textAllCaps="false"
+        android:text="Post Job"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>

@@ -1,6 +1,7 @@
 package com.apps.project1024.adapters;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.apps.project1024.databinding.ArticleLayoutBinding;
 import com.apps.project1024.models.Article;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +34,14 @@ public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Article article = articles.get(position);
+        holder.mBinding.tvTitle.setText(String.format("%s|%s", article.getTitle(), article.getCategory()));
+        holder.mBinding.tvBody.setText(article.getBody());
+        if (!TextUtils.isEmpty(article.getImageUrl())) {
+            Glide.with(context).load(article.getImageUrl())
+                    .apply(RequestOptions.centerCropTransform())
+                    .into(holder.mBinding.imageView);
+        }
 
     }
 

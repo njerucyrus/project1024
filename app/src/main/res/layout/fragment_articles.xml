@@ -2,12 +2,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.apps.project1024.ui.home.ArticlesFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.apps.project1024.ui.articles.ArticlesFragment">
+   
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/recycler_view"
+       tools:listitem="@layout/article_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/tv_no_data"
+          android:layout_width="match_parent"
+          android:layout_height="96dp"
+          android:layout_margin="16dp"
+          android:background="@drawable/message_info"
+          android:drawableStart="@drawable/ic_baseline_info_24"
+          android:drawablePadding="8dp"
+          android:drawableTint="@color/colorIcons"
+          android:gravity="center_horizontal|center_vertical"
+          android:padding="8dp"
+          android:text="No data found."
+          android:textAlignment="center"
+          android:textColor="@color/colorIcons"
+          android:textSize="16sp"
+          android:visibility="gone"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ProgressBar
+          android:id="@+id/progress_bar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

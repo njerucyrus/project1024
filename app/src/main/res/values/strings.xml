@@ -4,5 +4,68 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="terms_and_conditions" translatable="false"><![CDATA[By Signing in to this app you agree to the <a href=\'https://1024app.co.ke/privacy-policy/\'>1024App Terms of Service</a> and <a href=\'https://1024app.co.ke/privacy-policy/\'>Privacy Policy.</a>]]></string>
+    <string name="facebook_app_id">1132695800420999</string>
+    <string name="fb_login_protocol_scheme">fb1132695800420999</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+    <string-array name="article_category">
+        <item>Select Category</item>
+        <item>Entertainment</item>
+        <item>Sexual and Reproductive Health</item>
+        <item>Hiv and Aids</item>
+        <item>Safety</item>
+        <item>Mental Health</item>
+        <item>General Health</item>
+        <item>Alcohol and Drug Abuse</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="job_category">
+        <item>Select Job Category</item>
+        <item>Consulting and Strategy</item>
+        <item>Customer Service and Support</item>
+        <item>Driver and Transport Service</item>
+        <item>Engineering and Technology</item>
+        <item>Food Services and Catering</item>
+        <item>Health and Safety</item>
+        <item>Hospitality and Leisure</item>
+        <item>Human Resources</item>
+        <item>Legal Services</item>
+        <item>Management and Business Development</item>
+        <item>Marketing and Communications</item>
+        <item>Medical and Pharmaceutical</item>
+    </string-array>
+
+    <string-array name="job_industry">
+        <item>Select Job Industry</item>
+        <item>Advertising, Media and Communication</item>
+        <item>Agriculture, Fishing and Forestry</item>
+        <item>Automotive and Aviation</item>
+        <item>Banking, Finance and Insurance</item>
+        <item>Construction</item>
+        <item>Education</item>
+        <item>Energy and Utilities</item>
+        <item>Enforcement and Security</item>
+        <item>Entertainment, Events and Sport</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>Select Location</item>
+        <item>Eldoret</item>
+        <item>Kisumu</item>
+        <item>Mombasa</item>
+        <item>Nairobi</item>
+        <item>Outside Kenya</item>
+        <item>Rest of kenya</item>
+        <item>Thika</item>
+    </string-array>
+
+    <string-array name="forums">
+        <item>Select Forum</item>
+        <item>Posting to Growth Forum</item>
+        <item>Posting to Elevate Forum</item>
+        <item>Posting to EMPower Forum</item>
+        <item>Posting to Konnect Forum</item>
+    </string-array>
 
 </resources>

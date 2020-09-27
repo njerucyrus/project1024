@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.apps.project1024.ui.resource_center.HivActivity">
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What is HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="HIV or Human Immunodeficiency Virus, is a virus that attacks a key part of the immune system – the T-cells or CD4 cells – which help defend the body against illness. Left untreated, HIV can destroy so many CD4 cells that the body can’t fight infections and diseases anymore. When that happens, HIV can lead to an AIDS diagnosis"
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What is AIDS?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AIDS stands for Acquired Immune Deficiency Syndrome. AIDS applies to the most advanced stages of HIV infection. It is defined by the occurrence of any of more than 20 opportunistic infections or HIV-related cancers."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How does someone get HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Through unprotected anal or vaginal sex with someone with HIV who is not aware of their status or not on antiretrovirals (ARVs), the medications used to treat HIV"
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can HIV be transmitted through everyday items or casual contact?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="As important as knowing how HIV is spread, is knowing how it is NOT. HIV is not spread by sharing glasses or plates, food, holding hands, toilet seats, or other casual contact. You cannot get HIV through closed-mouth or “social” kissing or saliva."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can I Get HIV from Oral Sex?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Yes, it's possible -- whether you're giving or getting oral sex. While no one knows exactly how risky it is, evidence suggests it has less of a risk than unprotected anal or vaginal sex."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can I Get HIV from Anal Sex?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Yes. In fact, anal sex without a condom is very risky behavior. Either sex partner can become infected with HIV"
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What are the symptoms of HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="As with many other sexually transmitted diseases (STDs), HIV often shows NO symptoms initially. The only way to know if you have HIV is to ask to be tested. Early diagnosis and treatment improves health and prevents the spread of the virus."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How to prevent HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/preventHivRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp" />
+            </ScrollView>
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Is there a vaccine or cure for HIV/AIDS?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="No. There is no cure or vaccine for HIV, however there are highly effective treatments. A person with HIV today who is on ongoing antiretroviral (ARV) medication and in medical care can live a normal, healthy lifespan. HIV treatment also can prevent passing HIV from mother to child."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Why have some populations been more affected by HIV than others?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="One reason some groups and geographic areas have been more affected by HIV than others is because the HIV prevalence – the percent of the population that has HIV – is already high. In other words, the chances of coming in contact with the virus is greater."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How do I protect myself from getting HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/protectRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp" />
+            </ScrollView>
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can I avoid getting HIV if I’m having sex?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Yes! You can still have a sex life, and avoid getting HIV. The best way to avoid HIV if you are having sex is to use condoms."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How can I tell if someone else has HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="There is no way to know for sure if someone else has HIV unless they have an HIV test. Many people with HIV look perfectly healthy. Other people who have HIV may have symptoms that are identical to other common illnesses. You cannot tell by looking whether someone is HIV positive."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How can I tell if I have HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Many people who have HIV don’t even know it because they don’t show any symptoms for years. Even though you don’t show any symptoms, you can still pass on the virus to someone else. Testing for HIV is the only way to know whether you have been infected or not infected.
+There is a window period, where it takes 3 months for HIV antibodies to show up on an HIV test. The HIV antibody testing may be negative even though a person is infected. Healthcare workers will recommend retesting after three-month window period to ensure the test is accurate"
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Are there any special precautions I need to take to protect myself if my loved one has HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="No. As long as you aren’t having unprotected sex with them, or sharing needles, you are not at risk for getting HIV from them through casual contact (hugging, kissing, sharing dishes, sharing bathrooms, etc.). Standard cleaning practices will work just fine, since HIV dies outside in open air very quickly anyway.If you are having sex or sharing needles with your loved one who has HIV, then it would be good to get tested for HIV. Also, if you haven’t already, start using protection every time you have sex and new needles for your own injections"
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Where can I get a HIV test?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="You can get a HIV test in all government health facilities, mission hospitals, and nursing homes and stand-alone HIV testing sites."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What is the benefit of an HIV test?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="If you learn that you are HIV positive, you can take steps before symptoms appear to access treatment, care and support, thereby potentially prolonging your life and preventing health complications for many years."
+                    android:textSize="12sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/test_benefit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginStart="16dp" />
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What is the connection between alcohol, other drugs, and HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="The most commonly abused drugs include alcohol, marijuana, cocaine and heroin. Alcohol and drugs can alter people’s judgment. They may take risks that might expose them to HIV that they would not take when sober. Alcohol and other drugs can have dangerous interactions with the medicines that people with HIV take to stay well."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can I avoid getting HIV if I’m having sex?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Yes! You can still have a sex life, and avoid getting HIV. The best way to avoid HIV if you are having sex is to use condoms."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Am I going to die of AIDS?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Although complications from HIV infection remain a possibility, current treatments are giving people with HIV a near-normal life-span. This makes patients living with HIV vulnerable to the same health conditions that affect all people as they age. This is why it is important to maintain good health throughout your life."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What is the most common opportunistic infection affecting people living with HIV/AIDS?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Tuberculosis (TB) is the most common presenting illness among people with HIV. It is fatal if undetected or untreated and is the leading cause of death among people with HIV- responsible for 1 of every 3 HIV-associated deaths. Early detection of TB and prompt linkage to TB treatment and ART can prevent these deaths. It is strongly advised that HIV testing services integrate screening for TB and that all individuals diagnosed with HIV and active TB urgently use ART"
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What are the risk factors of HIV infection?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Behaviors and conditions that put individuals at greater risk of contracting HIV include:"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/risk_factors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What are the risk factors of HIV infection?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Behaviors and conditions that put individuals at greater risk of contracting HIV include:"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/no_hiv_ways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIV TREATMENT"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What treatment is available for HIV?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Antiretroviral (ARVs) are prescribed medications that work to reduce the amount of virus in the body (viral load) of an individual with HIV, which keeps the immune system working and prevents illness. In addition to improving health, getting and keeping a low viral load also prevents the spread of the virus to others."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How effective is HIV treatment?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="HIV treatment is highly effective. A person diagnosed with HIV today who is on ongoing antiretroviral (ARV) medication and in medical care can live a normal, healthy lifespan and have children without HIV."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="When should HIV treatment begin?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Antiretroviral treatment for HIV should begin as soon as possible after diagnosis. Given the strong health and preventative benefits, ARVs are recommended for all people living with HIV, regardless of how long they have had the virus or how healthy they are."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:heading="What is treatment as prevention?"
+        app:isAnimated="false"
+        app:isExpanded="true"
+        app:isPartitioned="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Treatment as prevention refers to the use of antiretrovirals (ARVs), the prescription medications used to treat HIV, to prevent transmission through sex, needle sharing, or prenatally (mother to child)."
+            android:textSize="12sp" />
+    </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What does it mean to be HIV undetectable?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="When a person living with HIV is undetectable it means the amount of virus in their blood (viral load), is so low that standard lab tests do not detect it. This is also referred to as being virally suppressed."
+                android:textSize="12sp" />
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+    </LinearLayout>
+</ScrollView>

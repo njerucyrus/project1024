@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.apps.project1024.R;
 import com.apps.project1024.ui.auth.LoginActivity;
 import com.apps.project1024.ui.auth.WelcomeActivity;
+import com.apps.project1024.utils.Utils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,15 +38,14 @@ public class Screen4Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_screen4, container, false);
-        Button btnGetStarted = v.findViewById(R.id.btn_get_started);
-        btnGetStarted.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(requireActivity(), WelcomeActivity.class));
-                requireActivity().finish();
-            }
+        View view = inflater.inflate(R.layout.fragment_screen4, container, false);
+        Button btnGetStarted = view.findViewById(R.id.btn_get_started);
+        btnGetStarted.setOnClickListener(v -> {
+            Utils.id(requireContext());
+            startActivity(new Intent(requireActivity(), WelcomeActivity.class));
+            requireActivity().finish();
+
         });
-        return v;
+        return view;
     }
 }

@@ -1,129 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.apps.project1024.ui.auth.ProfileActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="16dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/user_default256" />
-
-    <com.google.android.material.textfield.TextInputLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:hint="Name"
-        app:startIconDrawable="@drawable/ic_baseline_perm_identity_24"
-        app:startIconTint="@color/colorPrimary">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.apps.project1024.ui.auth.ProfileActivity">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_default256" />
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Name"
+            app:startIconDrawable="@drawable/ic_baseline_perm_identity_24"
+            app:startIconTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:hint="Phone Number"
-        app:startIconDrawable="@drawable/ic_phone_black_24dp"
-        app:startIconTint="@color/colorPrimary">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Phone Number"
+            app:startIconDrawable="@drawable/ic_phone_black_24dp"
+            app:startIconTint="@color/colorPrimary">
 
-    <RadioGroup
-        android:orientation="horizontal"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:layout_margin="8dp"
-            android:text="I am a student"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <RadioButton
-            android:layout_margin="8dp"
-            android:text="I am a professional"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </RadioGroup>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="Select your age band"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="16sp" />
-
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16sp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16sp"
-        app:chipSpacing="2dp"
-        app:singleSelection="true">
-
-        <com.google.android.material.chip.Chip
-           android:checkable="true"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/group_account_type"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="10-14 years"
-            app:chipStrokeColor="@color/colorPrimary" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
 
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
+            <RadioButton
+                android:id="@+id/radio_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="I am a student" />
+
+            <RadioButton
+                android:id="@+id/radio_professional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="I am a professional" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkable="true"
-            android:text="15-19 years" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Select your age band"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
 
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkable="true"
-            android:text="20-24 years" />
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16sp"
+            app:chipSpacing="2dp"
+            app:singleSelection="true">
 
-        <com.google.android.material.chip.Chip
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="10-14 years"
+                app:chipStrokeColor="@color/colorPrimary" />
 
-            android:layout_width="wrap_content"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="15-19 years" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="20-24 years" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="24+ years" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <Button
+            android:id="@+id/btn_submit_profile"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkable="true"
-            android:text="24+ years" />
-    </com.google.android.material.chip.ChipGroup>
+            android:layout_margin="16dp"
+            android:text="Submit Profile"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_submit_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Submit Profile"
-        android:textAllCaps="false" />
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
