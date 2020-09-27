@@ -57,9 +57,9 @@ public class ConnectFragment extends Fragment implements RecyclerItemClickListen
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         mBinding = FragmentConnectBinding.inflate(inflater, container,false);
-        initRecyclerView();
+
         return mBinding.getRoot();
     }
 
@@ -72,6 +72,8 @@ public class ConnectFragment extends Fragment implements RecyclerItemClickListen
         mViewModel.getKonnectPosts().observe(getViewLifecycleOwner(), forumPosts -> {
                     if (forumPosts.size() > 0) {
                         adapter.setPosts(forumPosts);
+                    } else {
+                        mBinding.tvNoData.setVisibility(View.VISIBLE);
                     }
                     mBinding.progressBar.setVisibility(View.GONE);
 

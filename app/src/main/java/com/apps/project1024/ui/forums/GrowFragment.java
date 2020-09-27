@@ -74,6 +74,8 @@ public class GrowFragment extends Fragment implements RecyclerItemClickListener<
         mViewModel.getGrowthPosts().observe(getViewLifecycleOwner(), forumPosts -> {
                     if (forumPosts.size() > 0) {
                         adapter.setPosts(forumPosts);
+                    }else {
+                        mBinding.tvNoData.setVisibility(View.VISIBLE);
                     }
                     mBinding.progressBar.setVisibility(View.GONE);
 

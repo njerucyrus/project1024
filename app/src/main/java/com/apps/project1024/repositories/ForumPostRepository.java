@@ -209,18 +209,15 @@ public class ForumPostRepository {
     public MutableLiveData<List<ForumPost>> getKonnectPosts() {
         MutableLiveData<List<ForumPost>> posts = new MutableLiveData<>();
         List<ForumPost> postList = new ArrayList<>();
-        db.collection("forum_posts").whereEqualTo("forum", "konnect").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                for (DocumentSnapshot snapshot : queryDocumentSnapshots.getDocuments()) {
-                    ForumPost post = snapshot.toObject(ForumPost.class);
-                    if (post != null) {
-                        postList.add(post);
-                    }
+        db.collection("forum_posts").whereEqualTo("forum", "konnect").get().addOnSuccessListener(queryDocumentSnapshots -> {
+            for (DocumentSnapshot snapshot : queryDocumentSnapshots.getDocuments()) {
+                ForumPost post = snapshot.toObject(ForumPost.class);
+                if (post != null) {
+                    postList.add(post);
                 }
-                isLoading.postValue(false);
-                posts.postValue(postList);
             }
+            isLoading.postValue(false);
+            posts.postValue(postList);
         }).addOnFailureListener(e -> {
             Log.e(TAG, "onFailure: ", e);
             isLoading.postValue(false);

@@ -66,6 +66,8 @@ public class AllForumsFragment extends Fragment implements RecyclerItemClickList
         mViewModel.getAllPosts().observe(getViewLifecycleOwner(), forumPosts -> {
                     if (forumPosts.size() > 0) {
                         adapter.setPosts(forumPosts);
+                    } else {
+                        mBinding.tvNoData.setVisibility(View.VISIBLE);
                     }
                     mBinding.progressBar.setVisibility(View.GONE);
 

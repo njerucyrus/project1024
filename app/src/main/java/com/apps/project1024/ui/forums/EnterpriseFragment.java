@@ -38,7 +38,6 @@ public class EnterpriseFragment extends Fragment implements RecyclerItemClickLis
     private ForumPostAdapter adapter;
 
 
-
     public EnterpriseFragment() {
         // Required empty public constructor
     }
@@ -62,7 +61,7 @@ public class EnterpriseFragment extends Fragment implements RecyclerItemClickLis
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mBinding = FragmentEnterpriseBinding.inflate(inflater, container, false);
-initRecyclerView();
+        initRecyclerView();
         return mBinding.getRoot();
     }
 
@@ -75,6 +74,8 @@ initRecyclerView();
         mViewModel.getEmpowerPosts().observe(getViewLifecycleOwner(), forumPosts -> {
                     if (forumPosts.size() > 0) {
                         adapter.setPosts(forumPosts);
+                    } else {
+                        mBinding.tvNoData.setVisibility(View.VISIBLE);
                     }
                     mBinding.progressBar.setVisibility(View.GONE);
 

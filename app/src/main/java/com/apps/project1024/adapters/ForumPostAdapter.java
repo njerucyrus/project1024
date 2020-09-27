@@ -52,8 +52,6 @@ public class ForumPostAdapter extends RecyclerView.Adapter<ForumPostAdapter.View
         holder.mBinding.tvTitle.setText(post.getTitle());
         if (post.getPhotoUrl() !=null) {
             Glide.with(context).load(post.getPhotoUrl())
-
-                    .apply(RequestOptions.circleCropTransform())
                     .into(holder.mBinding.forumPostImage);
         }
         holder.mBinding.tvBody.setText(post.getBody());
@@ -116,7 +114,9 @@ public class ForumPostAdapter extends RecyclerView.Adapter<ForumPostAdapter.View
     }
 
     public void setPosts(List<ForumPost> posts) {
+        this.posts.clear();
         this.posts = posts;
+
         notifyDataSetChanged();
 
     }
