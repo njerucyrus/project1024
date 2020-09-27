@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.apps.project1024.ui.resource_center.HivActivity">
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Are condoms effective against HIV and other sexually transmitted infections (STIs)?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Yes. Condoms have been proven to provide protection against sexually transmitted infections (STIs). In fact, condoms are the only contraceptive method that also provides STI protection. "
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Is it possible to get different sizes of condoms?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Condoms are made in different lengths and widths, and different manufacturers produce varying sizes. There is no standard length for condoms, though those made from natural rubber will in addition always stretch if necessary to fit the length of the man's erect penis. "
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="If I use a female condom, will there be a lot of mess?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Female condoms work in a similar way to the male condom, the sheath works by containing the sperm when the man ejaculates. They are therefore not messy to use if used correctly."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How are condoms tested?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="There are a range of tests performed by both regulatory agencies and the condom manufacturers. These include electronic testing, the water leak test, the air burst test and the strength test."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Is using two condoms better than one in avoiding pregnancy?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Using two condoms at the same time-either two male condoms or a male and female condom- is not a good idea as the friction may result in one or both of the condoms tearing."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Do condoms break and slip off frequently?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="No. When used as directed, condoms are effective in preventing pregnancy and are the only form of contraception that also can prevent STIs. This is why it’s important to follow directions for correct use."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How can I check a condom is safe to use?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Check that the use-by date has not expired, that they carry a standards approval mark (either FDA, ISO, CE or the Kenya Standard KEBS), and that they have been properly stored."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can you use a condom under water?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="If you are going to use a condom under water it is important that you put the condom on before you get into the water. Also, if the water contains chemicals such as chlorine, or additives such as soap, bath oil or bubble bath then this may affect the latex."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Are condom user errors common?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Yes. Most errors are, in fact, user errors. Some mistakes couples make include placing the condom upside down and then turning it over, taking condom off too soon, putting the condom on too late, opening the package with a sharp object and using an oil-based lubricant. Of course, the most frequent mistake is not using a condom at all."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How often do condoms fail?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Compared to modern hormonal methods, condoms are less reliable and effective in protecting against pregnancy but they are the only method that will protect against STIs, including HIV/AIDS."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="What is the best way to get condoms?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="You can buy condoms from chemists and supermarkets. You can also get them from family planning clinics or not for sale condoms from government health facilities."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How to use a condom?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Condoms are really easy to put on correctly with just a tiny bit of know-how and a little practice."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How much protection do condoms give against pregnancy? If a condom breaks what are the risks of pregnancy?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="When used as directed (i.e. the condom doesn't split or burst), they can be very effective in preventing both pregnancy and sexually transmitted infections (STIs). If a condom breaks and no other form of contraception such as the contraceptive pill is used, then there is a risk that a woman may become pregnant, so you should consider using emergency contraception. There is also a risk of contracting a STI."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Does using a male or female condom make sex less pleasurable?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Some people find that condoms interfere with spontaneity and sensation, but they can be fun to use once you have got used to how they need to be put on."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Are condoms fragile or delicate?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="No. Most condoms are made out of latex, which is a strong and flexible material. Condoms undergo rigorous quality control testing at each step of the manufacturing process to ensure that they are intact, strong, stable, and have no holes. Just make sure to store your condoms in a cool dry place (not your wallet)."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Can I reuse a condom?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="No, reuse of any condom is not recommended – male or female. A new condom should be used every time you have intercourse."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="How effective are condoms?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="When used correctly, the male condom is 98% effective and the female condom 95% - but 'correctly' is key – and not always the case!"
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+        <com.riyagayasen.easyaccordion.AccordionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:heading="Will it be safe if we wear two condoms?"
+            app:isAnimated="false"
+            app:isExpanded="true"
+            app:isPartitioned="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="No, the friction between two latex condoms is worse. Just one will do the job."
+                android:textSize="12sp" />
+
+        </com.riyagayasen.easyaccordion.AccordionView>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

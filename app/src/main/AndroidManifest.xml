@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.forums.CreateForumPostActivity"></activity>
+        <activity android:name=".ui.resource_center.CondomsActivity"></activity>
+        <activity android:name=".ui.forums.CreateForumPostActivity" />
         <activity android:name=".ui.resource_center.TeenagePregnancyActivity" />
         <activity android:name=".ui.resource_center.HivActivity" />
         <activity android:name=".ui.resource_center.StiActivity" />

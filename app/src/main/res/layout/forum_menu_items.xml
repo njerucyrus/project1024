@@ -82,7 +82,7 @@
         android:focusable="true"
         android:layout_margin="4dp"
         app:cardCornerRadius="8dp"
-        android:id="@+id/card_drugs"
+        android:id="@+id/card_covid"
         android:background="@color/colorAccent"
         android:layout_width="140dp"
         android:layout_height="192dp">
@@ -93,7 +93,7 @@
             android:layout_height="match_parent">
             <ImageView
                 android:scaleType="centerCrop"
-
+                android:src="@drawable/covid19"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </LinearLayout>
