@@ -51,7 +51,7 @@ public class HealthActivity extends AppCompatActivity implements RecyclerItemCli
 
         menuItems.add(new HealthMenuItem(
                 R.drawable.contraceptives,
-                "Contraceptives"
+                "ADA FAQs"
         ));
 
         menuItems.add(new HealthMenuItem(
@@ -81,7 +81,7 @@ public class HealthActivity extends AppCompatActivity implements RecyclerItemCli
     @Override
     public void onItemClicked(HealthMenuItem item) {
         if (item.getResId() == R.drawable.contraceptives) {
-
+            startActivity(new Intent(HealthActivity.this, AdaActivity.class));
         } else if (item.getResId() == R.drawable.stds) {
             startActivity(new Intent(HealthActivity.this, StiActivity.class));
         } else if (item.getResId() == R.drawable.pregnant) {

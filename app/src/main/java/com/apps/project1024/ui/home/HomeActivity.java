@@ -33,6 +33,16 @@ public class HomeActivity extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        FragmentTransaction initialTxn = getSupportFragmentManager().beginTransaction();
+
+        boolean article_exists = getSupportFragmentManager().findFragmentByTag(ArticlesFragment.class.getSimpleName()) != null;
+
+        if (!article_exists) {
+            initialTxn.addToBackStack(ArticlesFragment.class.getSimpleName());
+        }
+        initialTxn.replace(binding.container.getId(), new ArticlesFragment());
+
+
         MeowBottomNavigation bottomNavigation = binding.bottomNavigation;
 
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_home_24));
