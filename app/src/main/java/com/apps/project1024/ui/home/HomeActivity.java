@@ -42,14 +42,7 @@ public class HomeActivity extends AppCompatActivity {
             ab.setTitle("Home");
         }
 
-        FragmentTransaction initialTxn = getSupportFragmentManager().beginTransaction();
-
-        boolean article_exists = getSupportFragmentManager().findFragmentByTag(ArticlesFragment.class.getSimpleName()) != null;
-
-
-        initialTxn.addToBackStack(ArticlesFragment.class.getSimpleName());
-
-        initialTxn.replace(binding.container.getId(), new ArticlesFragment());
+        loadBaseFragment();
 
 
         MeowBottomNavigation bottomNavigation = binding.bottomNavigation;
@@ -98,6 +91,17 @@ public class HomeActivity extends AppCompatActivity {
 
             return null;
         });
+    }
+
+    private void loadBaseFragment(){
+        FragmentTransaction initialTxn = getSupportFragmentManager().beginTransaction();
+
+        boolean article_exists = getSupportFragmentManager().findFragmentByTag(ArticlesFragment.class.getSimpleName()) != null;
+
+        initialTxn.add(binding.container.getId(), new ArticlesFragment());
+        initialTxn.addToBackStack(ArticlesFragment.class.getSimpleName());
+        initialTxn.commit();
+
     }
 
     @Override

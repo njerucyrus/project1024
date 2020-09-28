@@ -153,7 +153,7 @@ public class CreateArticleActivity extends AppCompatActivity {
                 Article article = new Article(
                         "", mBinding.txtTitle.getText().toString().trim(),
                         mBinding.txtBody.getText().toString().trim(),
-                        selectedCategory,
+                        "",
                         "",
                         mBinding.txtVideoUrl.getText().toString().trim(),
                         mBinding.txtAuthor.getText().toString().trim(),
@@ -259,10 +259,7 @@ public class CreateArticleActivity extends AppCompatActivity {
 
         }
 
-        if (TextUtils.isEmpty(selectedCategory)) {
-            isValid = false;
-            displayErrorMessage(getApplicationContext(), "Select category.");
-        }
+
 
         return isValid;
     }

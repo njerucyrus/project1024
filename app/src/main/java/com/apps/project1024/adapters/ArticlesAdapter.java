@@ -35,7 +35,7 @@ public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Article article = articles.get(position);
-        holder.mBinding.tvTitle.setText(String.format("%s|%s", article.getTitle(), article.getCategory()));
+        holder.mBinding.tvTitle.setText(String.format("%s", article.getTitle()));
         holder.mBinding.tvBody.setText(article.getBody());
         if (!TextUtils.isEmpty(article.getImageUrl())) {
             Glide.with(context).load(article.getImageUrl())

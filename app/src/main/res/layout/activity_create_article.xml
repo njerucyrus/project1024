@@ -24,6 +24,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Spinner
+            android:visibility="gone"
             android:entries="@array/article_category"
             android:id="@+id/spinner_category"
             android:layout_width="match_parent"
