@@ -6,7 +6,7 @@
     tools:context=".ui.walkthrough.Screen3Fragment">
 
     <ImageView
-        android:src="@drawable/screen3"
+        android:src="@drawable/elevate"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

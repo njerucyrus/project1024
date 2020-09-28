@@ -6,7 +6,7 @@
     tools:context=".ui.walkthrough.Screen2Fragment">
 
     <ImageView
-        android:src="@drawable/screen2"
+        android:src="@drawable/empower"
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
