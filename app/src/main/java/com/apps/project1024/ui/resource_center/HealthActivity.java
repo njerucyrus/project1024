@@ -2,6 +2,7 @@ package com.apps.project1024.ui.resource_center;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,8 @@ import com.apps.project1024.models.HealthMenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import es.dmoral.toasty.Toasty;
 
 public class HealthActivity extends AppCompatActivity implements RecyclerItemClickListener<HealthMenuItem> {
 
@@ -83,12 +86,16 @@ public class HealthActivity extends AppCompatActivity implements RecyclerItemCli
         if (item.getResId() == R.drawable.contraceptives) {
             startActivity(new Intent(HealthActivity.this, AdaActivity.class));
         } else if (item.getResId() == R.drawable.stds) {
-            startActivity(new Intent(HealthActivity.this, StiActivity.class));
+            Toasty.info(getApplicationContext(), "Coming soon! We are working on something awesome", Toast.LENGTH_SHORT).show();
+            //startActivity(new Intent(HealthActivity.this, StiActivity.class));
         } else if (item.getResId() == R.drawable.pregnant) {
             startActivity(new Intent(HealthActivity.this, TeenagePregnancyActivity.class));
 
         } else if (item.getResId() == R.drawable.condoms) {
             startActivity(new Intent(HealthActivity.this, CondomsActivity.class));
+
+        } else if (item.getResId() == R.drawable.covid19) {
+            Toasty.info(getApplicationContext(), "Coming soon! We are working on something awesome", Toast.LENGTH_SHORT).show();
 
         }
     }

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.apps.project1024.R;
 import com.apps.project1024.adapters.BulletListAdapter;
@@ -43,4 +44,14 @@ public class AdaActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

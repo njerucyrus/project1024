@@ -1,6 +1,7 @@
 package com.apps.project1024.ui.home;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.ActionMode;
 import androidx.fragment.app.FragmentTransaction;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.apps.project1024.R;
 import com.apps.project1024.databinding.ActivityHomeBinding;
@@ -22,6 +24,8 @@ import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
 import java.lang.reflect.Method;
 
+import es.dmoral.toasty.Toasty;
+
 public class HomeActivity extends AppCompatActivity {
 
     private ActivityHomeBinding binding;
@@ -33,13 +37,18 @@ public class HomeActivity extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        ActionBar ab = getSupportActionBar();
+        if (ab !=null) {
+            ab.setTitle("Home");
+        }
+
         FragmentTransaction initialTxn = getSupportFragmentManager().beginTransaction();
 
         boolean article_exists = getSupportFragmentManager().findFragmentByTag(ArticlesFragment.class.getSimpleName()) != null;
 
-        if (!article_exists) {
-            initialTxn.addToBackStack(ArticlesFragment.class.getSimpleName());
-        }
+
+        initialTxn.addToBackStack(ArticlesFragment.class.getSimpleName());
+
         initialTxn.replace(binding.container.getId(), new ArticlesFragment());
 
 
@@ -69,6 +78,9 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(new Intent(HomeActivity.this, ForumsActivity.class));
                     break;
 
+                case 3:
+                    Toasty.info(getApplicationContext(), "Coming Soon! We are working on something awesome.", Toast.LENGTH_SHORT).show();
+                    break;
                 case 4:
                     FragmentTransaction jobsTxn = getSupportFragmentManager().beginTransaction();
 
@@ -76,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     jobsTxn.replace(binding.container.getId(), new JobListingFragment());
                     if (!jobsExist) {
-                            jobsTxn.addToBackStack(JobListingFragment.class.getSimpleName());
+                        jobsTxn.addToBackStack(JobListingFragment.class.getSimpleName());
                     }
 
                     jobsTxn.commit();
@@ -91,23 +103,20 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home_menu, menu);
-        if(menu.getClass().getSimpleName().equals("MenuBuilder")){
-            try{
+        if (menu.getClass().getSimpleName().equals("MenuBuilder")) {
+            try {
                 Method m = menu.getClass().getDeclaredMethod(
                         "setOptionalIconsVisible", Boolean.TYPE);
                 m.setAccessible(true);
                 m.invoke(menu, true);
-            }
-            catch(NoSuchMethodException e){
+            } catch (NoSuchMethodException e) {
                 Log.e(TAG, "onMenuOpened", e);
-            }
-            catch(Exception e){
+            } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }
         return super.onCreateOptionsMenu(menu);
     }
-
 
 
     @Override
