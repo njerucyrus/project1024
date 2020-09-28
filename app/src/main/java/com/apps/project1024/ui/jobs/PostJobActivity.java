@@ -3,10 +3,12 @@ package com.apps.project1024.ui.jobs;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -34,6 +36,11 @@ public class PostJobActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mBinding = ActivityPostJobBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
+        ActionBar ab = getSupportActionBar();
+        if (ab !=null) {
+            ab.setTitle("Post Job");
+            ab.setDisplayHomeAsUpEnabled(true);
+        }
         mProgress = new ProgressDialog(this);
         mViewModel = new ViewModelProvider(this).get(JobsViewModel.class);
         //clear any previous values.
@@ -88,7 +95,6 @@ public class PostJobActivity extends AppCompatActivity {
             }
         });
 
-
         mBinding.btnSubmit.setOnClickListener(view -> {
             if (validateInputs()) {
                 Job job = new Job(
@@ -131,9 +137,16 @@ public class PostJobActivity extends AppCompatActivity {
                 mViewModel.resetValues();
             }
         });
+    }
 
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 

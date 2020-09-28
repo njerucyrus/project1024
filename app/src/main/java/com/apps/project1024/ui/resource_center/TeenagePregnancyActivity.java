@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.apps.project1024.R;
 import com.apps.project1024.adapters.BulletListAdapter;
@@ -158,4 +159,14 @@ public class TeenagePregnancyActivity extends AppCompatActivity {
         impactsToMothers.setAdapter(impactsToMothersAdapter);
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

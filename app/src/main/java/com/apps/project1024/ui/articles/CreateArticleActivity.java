@@ -118,6 +118,7 @@ public class CreateArticleActivity extends AppCompatActivity {
     }
 
 
+
     private void showProgress(String message){
         mProgress.setMessage(message);
         mProgress.setCanceledOnTouchOutside(false);
@@ -141,6 +142,10 @@ public class CreateArticleActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         final int id = item.getItemId();
 
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+
+        }
 
         if (id == R.id.action_create) {
             if (validateInputs()) {
