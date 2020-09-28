@@ -42,4 +42,40 @@
 
 
     </com.riyagayasen.easyaccordion.AccordionView>
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:heading="Causes of drug addiction"
+        app:isAnimated="false"
+        app:isExpanded="true"
+        app:isPartitioned="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="The signs of drug use and addiction can vary depending on the person and the drug, but some common signs areA combination of factors related to your genes, environment, and your personal development increases the chance that taking drugs will lead to addiction. These include:"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/causes_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </com.riyagayasen.easyaccordion.AccordionView>
 </LinearLayout>
