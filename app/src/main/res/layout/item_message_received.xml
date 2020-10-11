@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/image_message_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/default_user_64"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:autoLink="all"
+            android:background="@drawable/rounded_rectactangle_primary"
+            android:maxWidth="240dp"
+            android:minWidth="120dp"
+            android:minHeight="24dp"
+            android:padding="8dp"
+
+            android:textColor="@color/colorWhite"
+            android:textColorLink="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+            app:layout_constraintTop_toBottomOf="@+id/text_message_name" />
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_message_body"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:autoLink="all"
+            android:maxWidth="240dp"
+            android:minWidth="180dp"
+            android:padding="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+            app:layout_constraintTop_toBottomOf="@+id/text_message_name" />
+
+        <TextView
+            android:id="@+id/text_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:lastBaselineToBottomHeight="2dp"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_message_body"
+            app:layout_constraintLeft_toRightOf="@+id/text_message_body" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
